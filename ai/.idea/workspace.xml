@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5841e9ee-c461-47d5-a918-fe49aaeaf4ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/api_template.__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/api_template.__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/compat_template.__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/compat_template.__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/compat_template_v1.__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/compat_template_v1.__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/deploy_mnist_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/deploy_mnist_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/export_mnist_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/export_mnist_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/saved_model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/saved_model_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/use_mnist_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/use_mnist_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/use_model_in_sequential_keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/use_model_in_sequential_keras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/use_text_embedding_in_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/examples/saved_model/integration_tests/use_text_embedding_in_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/examples/tf2_showcase/mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/examples/tf2_showcase/mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/lite/python/lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/lite/python/lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/lite/python/lite_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/lite/python/lite_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/lite/testing/model_coverage/model_coverage_lib_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/lite/testing/model_coverage/model_coverage_lib_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/autograph/pyct/inspect_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/autograph/pyct/inspect_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/debug/examples/v1/debug_keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/debug/examples/v1/debug_keras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/debug/examples/v1/examples_v1_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/debug/examples/v1/examples_v1_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/distribute_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/distribute_lib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/keras_save_load_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/keras_save_load_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/model_collection/model_collection_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/model_collection/model_collection_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/saved_model_test_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/saved_model_test_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/values.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/distribute/values.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/backprop.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/backprop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/benchmarks_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/benchmarks_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/def_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/def_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/memory_tests/memory_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/eager/memory_tests/memory_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/estimator/keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/estimator/keras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/feature_column/dense_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/feature_column/dense_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/feature_column/feature_column_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/feature_column/feature_column_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/feature_column/sequence_feature_column.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/feature_column/sequence_feature_column.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/feature_column/serialization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/feature_column/serialization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/framework/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/framework/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/activations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/activations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/densenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/densenet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/imagenet_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/imagenet_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/inception_resnet_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/inception_resnet_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/inception_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/inception_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/mobilenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/mobilenet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/nasnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/nasnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/resnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/resnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/resnet_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/resnet_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/xception.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/applications/xception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/backend_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/backend_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/backend_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/backend_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/callbacks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/callbacks_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/callbacks_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/constraints.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/constraints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/boston_housing.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/boston_housing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/cifar100.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/cifar100.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/fashion_mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/fashion_mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/imdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/imdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/reuters.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/datasets/reuters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/distribute_strategy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/distribute_strategy_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/distributed_training_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/distributed_training_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_dnn_correctness_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_dnn_correctness_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_embedding_model_correctness_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_embedding_model_correctness_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_image_model_correctness_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_image_model_correctness_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_lstm_model_correctness_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_lstm_model_correctness_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_premade_models_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_premade_models_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_utils_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/keras_utils_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/multi_worker_training_state.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/distribute/multi_worker_training_state.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/base_layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/base_layer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/base_layer_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/base_layer_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/base_preprocessing_layer_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/base_preprocessing_layer_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/data_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/data_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/input_layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/input_layer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/input_spec.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/input_spec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/network_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/network_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/saving.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training_integration_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training_integration_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/engine/training_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/estimator/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/estimator/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/initializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/initializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/keras_parameterized.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/keras_parameterized.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/advanced_activations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/advanced_activations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/convolutional.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/convolutional.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/convolutional_recurrent.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/convolutional_recurrent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/cudnn_recurrent.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/cudnn_recurrent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/dense_attention.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/dense_attention.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/embeddings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/embeddings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/kernelized.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/kernelized.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/noise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/normalization_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/normalization_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/pooling.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/pooling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/preprocessing/normalization_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/preprocessing/normalization_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/recurrent.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/recurrent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/recurrent_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/recurrent_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/rnn_cell_wrapper_v2_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/rnn_cell_wrapper_v2_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/serialization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/layers/serialization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/losses.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/losses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/mixed_precision/experimental/policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/mixed_precision/experimental/policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/ops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/adadelta.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/adadelta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/adagrad.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/adagrad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/adam.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/adam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/adamax.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/adamax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/ftrl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/ftrl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/gradient_descent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/learning_rate_schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/learning_rate_schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/nadam.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/nadam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/optimizer_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/optimizer_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/rmsprop.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizer_v2/rmsprop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/optimizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/premade/linear.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/premade/linear.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/premade/wide_deep.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/premade/wide_deep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/preprocessing/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/preprocessing/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/preprocessing/sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/preprocessing/sequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/preprocessing/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/preprocessing/text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/regularizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/regularizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/hdf5_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/hdf5_format.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/model_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/model_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/save_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/save_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/layer_serialization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/layer_serialization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/save_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/save_impl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/saved_model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/saved_model_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/serialized_attributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model/serialized_attributes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model_experimental.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model_experimental.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model_experimental_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saved_model_experimental_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saving_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/saving/saving_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/data_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/generic_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/generic_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/io_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/io_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/layer_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/layer_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/losses_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/losses_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/metrics_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/metrics_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/multi_gpu_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/multi_gpu_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/np_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/np_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/tf_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/tf_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/vis_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/utils/vis_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/wrappers/scikit_learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/keras/wrappers/scikit_learn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/kernel_tests/rnn_cell_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/kernel_tests/rnn_cell_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/kernel_tests/rnn_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/kernel_tests/rnn_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/kernel_tests/variable_scope_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/kernel_tests/variable_scope_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/layers/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/layers/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/layers/convolutional.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/layers/convolutional.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/layers/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/layers/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/layers/pooling.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/layers/pooling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/control_flow_util_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/control_flow_util_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/custom_gradient.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/custom_gradient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/gradients_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/gradients_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/init_ops_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/init_ops_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/losses/loss_reduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/losses/loss_reduction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/losses/losses_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/losses/losses_impl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/math_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/math_ops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/nn_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/nn_impl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/rnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/rnn_cell_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/rnn_cell_impl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/sort_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/sort_ops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/variable_scope.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/ops/variable_scope.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/saved_model/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/saved_model/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/saved_model/model_utils/export_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/saved_model/model_utils/export_output.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/saved_model/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/saved_model/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/saved_model/save_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/saved_model/save_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/tools/api/generator/doc_srcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/tools/api/generator/doc_srcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/tpu/feature_column_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/tpu/feature_column_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/tpu/tensor_tracer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/tpu/tensor_tracer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/checkpoint_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/checkpoint_management.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/experimental/loss_scaling_gradient_tape.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/experimental/loss_scaling_gradient_tape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/experimental/mixed_precision.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/experimental/mixed_precision.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/experimental/mixed_precision_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/experimental/mixed_precision_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/tracking/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/tracking/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/tracking/data_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/tracking/data_structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/tracking/layer_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/tracking/layer_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/tracking/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/training/tracking/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/python/util/tf_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/python/util/tf_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/api/tests/deprecation_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/api/tests/deprecation_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/api/tests/module_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/api/tests/module_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/common/public_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/common/public_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/all_renames_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/all_renames_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/module_deprecations_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/module_deprecations_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/renames_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/renames_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/testdata/test_file_v1_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/testdata/test_file_v1_12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/tf_upgrade_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/tf_upgrade_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/tf_upgrade_v2_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/compatibility/tf_upgrade_v2_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/docs/doc_controls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/docs/doc_controls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/docs/generate_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/docs/generate_lib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/tools/docs/tf_doctest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/tools/docs/tf_doctest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/virtual_root_template_v1.__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/virtual_root_template_v1.__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow/virtual_root_template_v2.__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/tensorflow/virtual_root_template_v2.__init__.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/tensorflow" />
+  </component>
+  <component name="ProjectId" id="1YMPurcz6tC7CWZ3yjd9v8oKf6S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="chatbot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chatbot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.chatbot" />
+        <item itemvalue="Python.chatbot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5841e9ee-c461-47d5-a918-fe49aaeaf4ec" name="Default Changelist" comment="" />
+      <created>1582749718681</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582749718681</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
