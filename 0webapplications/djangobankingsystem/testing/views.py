@@ -1,20 +1,25 @@
-from django.shortcuts import render,redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate,login 
-from django.views.generic.list import ListView
+
 # Create your views here.
 
+
 def index(request):
+    
+    return render(request,'index.html',{})
 
-    # 
-    if request.user.is_authenticated:
-        return render(request,'index.html',{})
-    else:
-        return redirect('register')
 
+# cards 
+
+def dashboard(request):
+    pass 
+
+# add card 
 def cards(request):
-    return render(request,'cards.html')
+    pass
 
+def addCard(request):
+    pass
 
 def register(request):
     if request.method == 'POST':
