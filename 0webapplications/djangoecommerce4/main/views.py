@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate,login 
 from .models import Product
 # Create your views here.
+from django.core.paginator import Paginator
 
 def index(request):
     product_objects = Product.objects.all()
@@ -12,9 +13,14 @@ def index(request):
     item_name = request.GET.get('item_name')
 
     if item_name != '' and item_name is not None:
-        product_objects = product_objects.filter(title_icontains=item_name)
-        
+        print("here")
+        product_objects = product_objects.filter(title__icontains=item_name)
 
+    paginator = Paginator(product_objects, 4)
+   
+    page = request.GET.get('page')
+
+    product_objects = paginator.get_page(page)
     return render(request,'shop/index.html',{'product_objects':product_objects})
 
 def register(request):
