@@ -76,9 +76,6 @@ def register():
 class company:
     pass 
 
-# class Person:
-#     self.__init__() 
-#     pass 
 
 # day 
 # cook 
@@ -88,34 +85,27 @@ class company:
 # fast 
 
 class Bank:
-    #
-    #
-    # 
     # services 
     # take out loans 
     # make deposits 
     # make 
     pass 
-#      
-#     
 
 def passageOfTime():
     start_time = time.monotic()
     print('seconds: ', time.monotonic() - start_time)
     pass 
-
-print("Economics the simulation")
-print("the time of day today is ")
-print("the stock market is")
-print("show graph with matplitlib of the stock market ")
-print("print out ")
-print("")
-print("A  ")
-print("make a passage of time ")
-print("the passage of time is 1 hour 1 day 1 year")
-print("print the population out and the ritches of each")
-print("population")
-print("the upper class middle class higher class")
+while True:
+    print("Economics the simulation")
+    print("the time of day today is ")
+    print("the stock market is")
+    print("show graph with matplitlib of the stock market ")
+    print("A  " )
+    print("make a passage of time ")
+    print("the passage of time is 1 hour 1 day 1 year")
+    print("print the population out and the ritches of each")
+    print("population")
+    print("the upper class middle class higher class")
 
 
 # if the user is getting poorere then 
