@@ -1,5 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 import time 
+import tkinter 
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
@@ -85,11 +87,24 @@ class company:
 # fast 
 
 class Bank:
-    # services 
-    # take out loans 
-    # make deposits 
-    # make 
-    pass 
+    self.__init__(self,money,reserve,accounts):
+        self.reserve = reserve 
+        self.money = money
+        self.accounts = accounts 
+
+    def getLoan(self,amount):
+        loan = self.money - amount 
+        self.money = self.money - amount
+        return loan 
+
+    def getMoney(self):
+        return self.money
+
+    def addMoney(self,amount):
+        self.money = self.money + amount
+        print("added amoutn" + amount)
+    
+
 
 def passageOfTime():
     start_time = time.monotic()
