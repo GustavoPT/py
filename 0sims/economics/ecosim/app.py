@@ -1,7 +1,9 @@
+from flask import Flask, render_template,redirect
 from flask_sqlalchemy import SQLAlchemy
 import time 
 import tkinter 
-
+import tkinter as tk
+import keras 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
@@ -72,22 +74,8 @@ class state:
     #longitude 
     pass 
 
-def register():
-    pass
-
-class company:
-    pass 
-
-
-# day 
-# cook 
-# eat 
-# 
-
-# fast 
-
 class Bank:
-    self.__init__(self,money,reserve,accounts):
+    def __init__(self,money,reserve,accounts):
         self.reserve = reserve 
         self.money = money
         self.accounts = accounts 
@@ -103,26 +91,42 @@ class Bank:
     def addMoney(self,amount):
         self.money = self.money + amount
         print("added amoutn" + amount)
+
+    def add
     
+w= tkinter.Tk()
 
 
-def passageOfTime():
-    start_time = time.monotic()
-    print('seconds: ', time.monotonic() - start_time)
-    pass 
-while True:
-    print("Economics the simulation")
-    print("the time of day today is ")
-    print("the stock market is")
-    print("show graph with matplitlib of the stock market ")
-    print("A  " )
-    print("make a passage of time ")
-    print("the passage of time is 1 hour 1 day 1 year")
-    print("print the population out and the ritches of each")
-    print("population")
-    print("the upper class middle class higher class")
+b = Bank()
+u = User()
+p = Product()
+s = Seller()
+
+button = tk.Button(w, text='Stop', width=25, command=w.destroy)
+button.grid(row=1,column=1)
+
+tk.Label(w, text='Economics Simulation').grid(row=0)
+tk.Label(w, text='Press To Add Mo').grid(row=0)
+
+tk.Label(w, text='Population').grid(row=0)
+tk.Label(w, text='').grid(row=0)
+tk.Label(w, text='one day pass ').grid(row=0)
+tk.Label(w, text='one year ').grid(row=0)
+tk.Label(w, text='one month').grid(row=0)
+#make someone sell something 
+# give a list of sellers 
+# make someone buy something 
+# list of users 
+# buy a product 
+# from them 
+# make a new transaction 
+# if statement 
+# run 
 
 
-# if the user is getting poorere then 
-# go to the bank and take out a loan from the 
-# bank take out l;p
+
+
+# row = 0 col = 0 row = 1 col = 1 
+# row = 2 col = 2 
+# row = 3 col = 3
+w.mainloop()
