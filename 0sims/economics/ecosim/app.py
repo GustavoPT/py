@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import time 
 import tkinter 
 import tkinter as tk
-import keras 
+#  from tkinter import ttk 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
@@ -75,6 +75,8 @@ class state:
     pass 
 
 class Bank:
+
+
     def __init__(self,money,reserve,accounts):
         self.reserve = reserve 
         self.money = money
@@ -92,12 +94,12 @@ class Bank:
         self.money = self.money + amount
         print("added amoutn" + amount)
 
-    def add
+    # def add
     
 w= tkinter.Tk()
 
 
-b = Bank()
+# b = Bank()
 u = User()
 p = Product()
 s = Seller()
@@ -105,14 +107,21 @@ s = Seller()
 button = tk.Button(w, text='Stop', width=25, command=w.destroy)
 button.grid(row=1,column=1)
 
-tk.Label(w, text='Economics Simulation').grid(row=0)
+tk.Label(w, text='Economics Simulation').grid(row=0,column=2)
 tk.Label(w, text='Press To Add Mo').grid(row=0)
+
+
+
+yscrollbar = ttk.Scrollbar(w)
+
+
 
 tk.Label(w, text='Population').grid(row=0)
 tk.Label(w, text='').grid(row=0)
 tk.Label(w, text='one day pass ').grid(row=0)
 tk.Label(w, text='one year ').grid(row=0)
 tk.Label(w, text='one month').grid(row=0)
+
 #make someone sell something 
 # give a list of sellers 
 # make someone buy something 
@@ -123,7 +132,8 @@ tk.Label(w, text='one month').grid(row=0)
 # if statement 
 # run 
 
-
+# scrollable frame make each user 
+#
 
 
 # row = 0 col = 0 row = 1 col = 1 
