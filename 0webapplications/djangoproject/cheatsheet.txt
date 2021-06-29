@@ -1,2 +1,6 @@
-django-admin startapp django-chat
+django-admin startapp
+django-admin startproject djangosocialmedia
+ django-chat
 py manage runserver
+
+https://docs.djangoproject.com/en/3.2/topics/db/examples/many_to_one/

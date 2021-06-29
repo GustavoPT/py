@@ -7,11 +7,21 @@ except ImportError:
 from flask import Flask, render_template,redirect
 from flask_sqlalchemy import SQLAlchemy
 import time 
+from flask_login import LoginManager, login_user, UserMixin, logout_user, login_required, current_user
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:aa09@localhost/bankeco-sim"
 db = SQLAlchemy(app)
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 class Product(db.Model):
     id = db.Column(db.Integer,primary_key=True)
@@ -54,7 +64,7 @@ class Card(db.Model):
     user_id = db.Column(db.Integer,db.ForeignKey('user.id'),unique=True)
     transactions = db.relationship('Transaction',backref='card')
 
-class User(db.Model):
+class User(db.Model,UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(128))
     email = db.Column(db.String(128))
@@ -63,7 +73,7 @@ class User(db.Model):
     cards = db.relationship('Card',backref='user')
     transactions = db.relationship('Transaction',backref='user')
     accounts = db.relationship('Account',backref='user')
-    
+
     def __str__(self):
         return self.name
 
@@ -119,6 +129,9 @@ class Bank:
                 print("user with the name " + user.name + " could not be found \n")
         
 balance = 12.00
+sessionuser = User(name="test")
+sac = Account(user_id=sessionuser.id,balance=1.00)
+sessionuser.accounts.append(sac) 
   
 class MyBankApp(tk.Tk):
     def __init__(self,*args,**kwargs):
@@ -146,14 +159,11 @@ class MyBankApp(tk.Tk):
 class loginpage(tk.Frame):
     def __init__(self,parent,controller):
         tk.Frame.__init__(self,parent)
-
-
-
         label = tk.Label(self, text="login page", font=controller.title_font)
         label.grid(row=0,column=2)
 
         errorlabel = tk.Label(self, text="", font=controller.title_font)
-
+        errorlabel.grid(row=0,column=3)
 
         ulabel = tk.Label(self, text="username", font=controller.title_font)
         ulabel.grid(row=1,column=0)
@@ -171,36 +181,77 @@ class loginpage(tk.Frame):
                             command=lambda:self.checklogin(username=username,pw=pw,controller=controller))
         submitfield.grid(row=3,column=1)
     
+        register =  tk.Button(self, text="register",
+                            command=lambda:controller.show_frame('registrationpage'))
+        register.grid(row=3,column=2)
     def checklogin(self,username,pw,controller):
         usernam = username.get()
         pw = pw.get()
         print("u" + usernam + " " + pw)
         User.query.filter_by()
-        user = User.query.filter(User.name.like(usernam),User.password=pw).first()
+        user = User.query.filter(User.name.like(usernam),User.password.like(pw)).first()
         if(user):
+        #    login_user(user)
+           global sessionuser
+           sessionuser = user
            controller.show_frame('dashboard')
         else:
-            self.errorlable.text =" "
+            self.errorlabel.text ="c"
 
 class registrationpage(tk.Frame):
     def __init__(self,parent,controller):
         tk.Frame.__init__(self,parent)
         self.controller = controller
-        uname = tk.Entry()
-        pw = tk.Entry()
-        submitfield = tk.Button(self,text="submit",command=lambda:self.checkreg)
-    def checkreg(self):
-        username = self.username.get()
-        pw = self.password.get()
 
-        user = User.query.filter(User.name.like(usernam),User.password=pw).first()
+        label = tk.Label(self, text="registration page", font=controller.title_font)
+        label.grid(row=0,column=2)
+
+        errorlabel = tk.Label(self, text="", font=controller.title_font)
+        errorlabel.grid(row=0,column=3)
+
+        ulabel = tk.Label(self, text="username", font=controller.title_font)
+        ulabel.grid(row=1,column=0)
+
+        username = tk.Entry(self)
+        username.grid(row=1,column=1)
+
+        pwlabel = tk.Label(self, text="password", font=controller.title_font)
+        pwlabel.grid(row=2,column=0)
+         
+        pw = tk.Entry(self)
+        pw.grid(row=2,column=1)
+
+        submitfield =  tk.Button(self, text="submit",
+                            command=lambda:self.checkreg(username=username,pw=pw))
+        submitfield.grid(row=3,column=1)
+    
+        register =  tk.Button(self, text="login",
+                            command=lambda:controller.show_frame('loginpage'))
+        register.grid(row=3,column=2)
+
+    def checkreg(self,username,pw):
+        username = username.get()
+        pw = pw.get()
+        print("username" + username)
+        print("pw" + pw)
+
+        user = User.query.filter(User.name.like(username),User.password.like(pw)).first()
+             
         if(user):
-           self.errorlable.text ="user already exists"
+           self.errorlabel.text ="user already exists"
+           print("already")
         else:
-            u2 = User(username=uname,password=pw)
+            u2 = User(name=username,password=pw)
+            a1 = Account(balance=0.00,user_id=u2.id)
+            u2.accounts.append(a1)
             db.session.add(u2)
             db.session.commit()
-            controller.show_frame('dashboard')
+            db.session.add(a1)
+            db.session.commit()
+            global sessionuser 
+            sessionuser = u2
+            # login_user(u2)
+            self.controller.show_frame('dashboard')
 
 class dashboard(tk.Frame):
     def __init__(self,parent,controller):
@@ -213,16 +264,27 @@ class dashboard(tk.Frame):
                             command=lambda: controller.show_frame("addmoney"))
         button2 = tk.Button(self, text="withdraw money",
                             command=lambda: controller.show_frame("withdrawmoney"))
+        
         addmoneybu.grid(row=1,column=1)
         button2.grid(row=1,column=2)
+
+        logout = tk.Button(self, text="logout",
+                            command=lambda: self.logout(controller=controller))
+        
+        logout.grid(row=1,column=3)
+    def logout(self,controller):
+        sessionuser = None 
+        controller.show_frame("loginpage")
 
 class withdrawmoney(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
+        
         label1 = tk.Label(self, text="Withdraw Money Page ", font=controller.title_font)
         label1.grid(row=1,column=2)
-
+        global sessionuser
+        balance = sessionuser.accounts[0].balance
         label2 = tk.Label(self, text="balance " + str(balance), font=controller.title_font)
         label2.grid(row=2,column=1)
 
@@ -243,16 +305,26 @@ class withdrawmoney(tk.Frame):
         submitbutton.grid(row=4,column=1)
 
     def withdraw(self,controller,withdraw):
-        global balance
+        global sessionuser
         amount = withdraw.get()
-        balance = balance - float(amount)
+        print(amount)
+        balance = sessionuser.accounts[0].balance
         print(balance)
+        sessionuser.accounts[0].balance = balance - float(amount)
+        print(sessionuser.accounts[0].balance)
+        user = User.query.filter_by(id=sessionuser.id)
+        user.accounts[0].balance = balance - float(amount)
+        db.session.commit()
+        sessionuser = user
         controller.show_frame("done")
 
 class addmoney(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
+
+        balance = sessionuser.accounts[0].balance
+
         label = tk.Label(self, text="Add Money Page ", font=controller.title_font)
         label.grid(row=0,column=2)
         balanceLabel = tk.Label(self, text="Balance " + str(balance), font=controller.title_font)
@@ -273,8 +345,17 @@ class addmoney(tk.Frame):
         dashbutton.grid(row=3,column=2)
 
     def addmoney(self,controller,addmoney,balance):
+        global sessionuser
         amount = addmoney.get()
-        balance = amount + balance
+        print(amount)
+        balance = sessionuser.accounts[0].balance
+        print(balance)
+        sessionuser.accounts[0].balance = balance + float(amount)
+        print(sessionuser.accounts[0].balance)
+        user = User.query.filter_by(id=sessionuser.id)
+        user.accounts[0].balance = balance + float(amount)
+        db.session.commit()
+        sessionuser = user
         controller.show_frame("done") 
     
 class done(tk.Frame):
@@ -282,11 +363,14 @@ class done(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         print(balance)
-        label = tk.Label(self, text="You are done your Balance now is " + str(balance), font=controller.title_font)
+        label = tk.Label(self, text="You are done your Balance now is " + str(sessionuser.accounts[0].balance), font=controller.title_font)
         label.grid(row=1,column=2)
         button = tk.Button(self, text=" done",
-                           command=lambda: controller.show_frame("login"))
+                           command=lambda:self.done)
         button.grid(row=1,column=1)
+    def done(self):
+        logout_user()
+        self.controller.show_frame("login")
 
 if __name__ == "__main__":
     app = MyBankApp()

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    hello 
+
+    <div id="trades"></div>
+
+
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+    <script>
+
+        class blockchain{
+
+
+            constructor(){
+
+            }
+
+            add(){
+
+            }
+
+            remove(){
+
+            }
+        }
+
+
+
+        class bitcoin{
+            constructor(){
+
+            }
+
+            
+        }
+
+        var exampleSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@kline_5m")
+        console.log(exampleSocket)
+
+
+        var tradeDiv = document.getElementById("trades")
+        exampleSocket.onmessage = function(event){
+            console.log(event.data)
+        
+            var messageObject = JSON.parse(event.data)
+
+            tradeDiv.append(messageObject.E)
+            tradeDiv.append(messageObject.s)
+        
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>

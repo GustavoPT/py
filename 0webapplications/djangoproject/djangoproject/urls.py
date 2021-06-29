@@ -15,8 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include 
+from django.db import models 
+from django.shortcuts import render
+
+
+def something(request):
+
+    return render(request,'som.html',{})
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('testing.urls')),
+    path('',include('main.urls')),
+    path('som',something),
+    path('ecommerce/',include('ecommerce.urls')),
 ]
+
+
+

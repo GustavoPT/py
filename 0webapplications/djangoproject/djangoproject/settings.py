@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'testing',
+    'ecommerce',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -84,9 +85,10 @@ WSGI_APPLICATION = 'djangoproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangohacker',
-        'user':'root',
-        'password':'aa09',
+        'NAME': 'djangotesting',
+        'USER':'root',
+        'PASSWORD':'aa09',
+        'POST':'3306'
     }
 }
 

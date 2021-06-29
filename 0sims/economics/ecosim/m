@@ -1,3 +1,11 @@
 flask db init
 flask db migrate -m "Initial migration."
 flask db upgrade
+
+
+
+                login_user(user, remember=form.remember.data)
+current_user.name 
+    logout_user()
+            login_user(new_user)
+current_user.accounts[0].)

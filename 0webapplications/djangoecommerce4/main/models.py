@@ -7,3 +7,5 @@ class Product(models.Model):
     category = models.CharField(max_length=300)
     description = models.TextField()
     image = models.CharField(max_length=300)
+
+# create my own rating system 
