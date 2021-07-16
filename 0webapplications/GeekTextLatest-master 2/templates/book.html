@@ -1,0 +1,168 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+	<div class = "row">
+		<div class="col-sm-4">
+			<div class="card">
+				<h4 class="card-title text-center">{{book.title}}</h4>
+				<h5 class="card-subtitle mb-1 text-center"><a href="{{ url_for('author_page') }}">{{book.authorName}}</a></h5>
+				<h6 class="card-subtitle mb-1 text-muted text-center">{{ book.genre }}</h6>
+				<div class="text-center">
+					<img id="myImg" class="img-thumbnail" src ="{{ book.image_path }}" alt="Book Image" style="width:100%;max-width:300px">
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- The Close Button -->
+						<span class="close">&times;</span>
+
+						<!-- Modal Content (The Image) -->
+						<img class="modal-content" id="img01">
+
+						<!-- Modal Caption (Image Text) -->
+						<div id="caption"></div>
+					</div>
+				</div>
+				<section class='rating-widget'>
+                    <div style="text-align: center;">
+                        <x-star-rating value="{{ average_rating }}" number="5" id="rated" disabled="true"></x-star-rating>
+                        {% if number_of_comments == 1 %}
+                            ({{ number_of_comments }} Rating)
+                        {% else %}
+                            ({{ number_of_comments }} Ratings)
+                        {% endif %}
+                    </div>
+
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item text-center">${{ book.price }}</li>
+					</ul>
+					<div class="card-body">
+						<a href="{{ url_for('add_to_cart', user_id=current_user.id, book_id=book.id) }}" class="btn btn-primary">Add to Cart</a>
+						<a href="{{ url_for('save_for_later',book_id=book.id) }}" class="btn btn-secondary">Save for later</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 align-self-center">
+			<div class="row">
+				<p class="card-text">{{ book.description }}</p>
+			</div>
+			
+			<div class="row">
+				<p>About The Author</p>
+				<p>{{author.AuthorBio}}</p>
+			</div>
+
+			<div class="row">
+				<p> Publisher : {{ book.publisher }}</p>
+			</div>
+
+			<article class="commentSection">
+                <section>
+                    <h3 >Comments</h3>
+                </section>
+				{% if comments and comments|length > 0 %}
+                {{ pagination.info }}
+                {{ pagination.links }}
+				{% endif %}
+                <section>
+                    {% if comments and comments|length > 0 %}
+                        {% for comment in comments %}
+                            <section>
+                                {{ comment.createdDate|datetime }}
+                                {%  if comment.anonymous %}
+                                    <i><b><u>{{ comment.user }}</u></b></i>
+                                {% else %}
+                                    <b><u>{{ comment.user }}</u></b>
+                                {% endif %}
+                                <x-star-rating value="{{ comment.rating }}" number="5" id="rated" disabled="true"></x-star-rating>
+                            </section>
+                            <section class="actualComment">
+                            <a>{{ comment.comments }}</a>
+                            </section>
+                        {% endfor %}
+                    {% else %}
+                    <p>&nbsp No comments yet.</p>
+                    {% endif %}
+                </section>
+            </article>
+
+			<style>
+                .commentSection {
+                    margin-bottom: 25px;
+                }
+                .commentSection nav {
+                    background: white !important;
+                    margin-top: 10px;
+                    margin-left: -8px;
+                    margin-bottom: 5px;
+                }
+                .commentSection span[aria-hidden=true] {
+                    padding: 0 !important;
+                }
+                .actualComment {
+                    margin-bottom: 10px;
+                }
+			</style>
+
+            {% if current_user.id and has_ordered %}
+                <article>
+                    <section>
+                        <h3 >Add Rating</h3>
+                    </section>
+                    <x-star-rating value="" number="5" id="rating" disabled="false"></x-star-rating>
+                    <section>
+                        <h3>Add Comment</h3>
+                        <form action="{{ url_for('add_comment_to_book', user_id=current_user.id, book_id=book.id) }}" method="post">
+                            <input type="hidden" id="ratingValue" name="ratingValue" value=""/>
+                            <textarea rows="6" cols="60" maxlength="500" name="comment" placeholder="Enter your comment here..." value=""></textarea>
+                            <br>
+                            <input type="checkbox" name="anonymous" id="anonymous" />
+                            <label for="chk">Submit as an anonymous user?</label>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </section>
+                </article>
+            {% endif %}
+
+            {% if current_user.id and not has_ordered %}
+            Want to leave a comment and rating? You must first order the book.
+            {% endif %}
+
+        <script src="../static/js/StarRating.js"></script>
+
+		</div>
+	</div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+if (typeof rating !== 'undefined') {
+    rating.addEventListener('rate', () => {
+        $('#ratingValue').attr('value', rating.value);
+    });
+}
+</script>
+
+{% endblock %}

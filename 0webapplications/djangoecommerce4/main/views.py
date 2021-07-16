@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate,login
 from .models import Product
 # Create your views here.
 from django.core.paginator import Paginator
-
+from django.views.generic import ListView 
 
 # test out the security 
 # make my own password hash function
@@ -14,6 +14,12 @@ from django.core.paginator import Paginator
 #  user form from model 
 #  list view for users 
 #  detail view for users 
+
+
+
+class ProductListView(ListView):
+    queryset = Product.objects.all()
+    template_name = "products/list.html"
 
 def index(request):
     product_objects = Product.objects.all()
@@ -33,10 +39,40 @@ def index(request):
     product_objects = paginator.get_page(page)
     return render(request,'shop/index.html',{'product_objects':product_objects})
 
+
+
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
+
+from .models import Rating
+
+
+def main_view(request):
+    obj = Rating.objects.filter(score=0).order_by("?").first()
+    context = {
+        'object':obj
+    }
+    return render(request,'ratings/main.html',context)
+
+
+# from .forms import ModelFormWithFileField
+
+# def upload_file(request):
+#     if request.method == 'POST':
+#         form = ModelFormWithFileField(request.POST, request.FILES)
+#         if form.is_valid():
+#             # file is saved
+#             form.save()
+#             return HttpResponseRedirect('/success/url/')
+#     else:
+#         form = ModelFormWithFileField()
+#     return render(request, 'upload.html', {'form': form})
+
 def rating(request):
 
 
-
+    obj = Rating.objects.get
+    context = {}
 
 
 
@@ -45,6 +81,8 @@ def rating(request):
     return render(request,'rating.html',{})
 
 
+def login(request):
+    return render()
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
